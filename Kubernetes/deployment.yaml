@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zomato
+  name: youtube
   labels:
-    app: zomato
+    app: youtube
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: zomato
+      app: youtube
   template:
     metadata:
       labels:
-        app: zomato
+        app: youtube
     spec:
       containers:
-      - name: zomato
-        image: kastrov/zomato:latest
+      - name: youtube
+        image: kastrov/youtube:latest
         ports:
         - containerPort: 3000
