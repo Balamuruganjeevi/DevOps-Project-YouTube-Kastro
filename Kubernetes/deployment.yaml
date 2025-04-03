@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: youtube
-        image: kastrov/youtube:latest
+        image: balajeevidesh4010/youtube:3
         ports:
         - containerPort: 3000
